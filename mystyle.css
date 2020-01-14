@@ -1,0 +1,257 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    border: 0;
+    box-sizing: border-box;
+    background-color: #ECE0D1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*@media only screen and (min-width: 768px) {}*/
+
+.logo_image {
+    max-width: 150px;
+    max-height: 130px;
+    padding: 0;
+    z-index: 1;
+}
+
+.menu {
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.navigation_container {
+    background-color: #ECE0D1;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    height: 50px;
+    font-family: 'Lucida Sans Typewriter', cursive;
+    flex-wrap: wrap;
+}
+
+.nav_link {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #A85D30;
+    text-decoration: none;
+}
+
+.show {
+    display: block;
+}
+
+.nav_link {
+    display: block;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Engravers;
+    font-size: 20px;
+    background-color: #A85D30;
+    text-align: left;
+    padding: 13px;
+    border-left: 1.5px solid #A85D30;
+}
+
+.navigation_container {
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 53px;
+    float: right;
+}
+
+.menu {
+    list-style: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+
+/* Here is my Home page styling */
+.cups_photo,
+.tea_photo,
+.learn_photo {
+    max-width: 100%;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.coffee_container,
+.tea_container {
+    position: relative;
+    display: block;
+    align-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.learn_container {
+    position: relative;
+    display: block;
+    align-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    max-width: 100%;
+}
+
+
+.page1_text,
+.page2_text,
+.page3_text {
+    color: white;
+    font-size: 25px;
+    background: none;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+}
+
+.photocredit,
+.credit {
+    color: black;
+    font-style: italic;
+    text-align: inherit;
+    margin-top: 5px;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.footer {
+    height: 60px;
+}
+
+/*Here starts the styling for the pages with text- Types of coffee*/
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title_container {
+    margin: 80px auto 0 auto;
+    align-content: center;
+    width: 300px;
+    color: #421908;
+    font-size: 25px;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.articletext {
+    font-family: 'Lucida Sans Typewriter', cursive;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.hotdrink_photo,
+.cappucinos_photo,
+.cupsofcoffee_photo {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+/*Tea Tips Page*/
+.teacup {
+    max-width: 100%;
+}
+
+.credits {
+    color: black;
+    font-style: italic;
+    text-align: inherit;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: end;
+}
+
+/*Learn Page- History of both*/
+.learnphoto,
+.quote {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Contact page styling*/
+.link {
+    text-decoration: none;
+    color: #A85D30;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: #421908;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: #421908;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: #421908;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: #421908;
+}
+
+.some {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    max-width: 100%;
+}

@@ -1,0 +1,231 @@
+.menu {
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mobilemenu {
+    display: none;
+    clear: both;
+    text-align: center;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px 23px 20px;
+    margin-top: -1px;
+    position: relative;
+    user-select: none;
+    color: white;
+}
+
+.menu_item {
+    font-size: 15px;
+    color: #A85D30;
+    padding: 5px 5px 5px 20px;
+    z-index: 4;
+}
+
+.menu_item:hover {
+    background-color: white;
+    color: #A85D30;
+    font-family: Engravers;
+}
+
+.navicon {
+    background: #38220f;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.navicon:before,
+.navicon:after {
+    background: #38220f;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navicon:before {
+    top: 5px;
+}
+
+.navicon:after {
+    top: -5px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-btn:checked ~ .mobilemenu {
+    display: inline-block;
+    float: right;
+    margin-top: -2px;
+    max-height: 300px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+.menu_item {
+    background-color: #ECE0D1;
+    list-style: none;
+    z-index: 4;
+}
+
+.menu_item:hover {
+    border: 1.5px solid #ffffff;
+}
+
+/*Now telling what should be hidden and what displayed*/
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+    .menu_item {
+        float: left;
+    }
+
+    .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+
+    }
+
+    .mobilemenu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .title_container,
+    .cups_photo,
+    .tea_photo,
+    .learn_photo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+    }
+
+    .footer {
+        height: 30px;
+    }
+
+    .page1_text,
+    .page2_text,
+    .page3_text,
+    h1 {
+        font-size: 35px;
+    }
+
+    .photocredit,
+    .credit,
+    .credits {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+
+    .title_container,
+    .coffee_container,
+    .tea_container,
+    .learn_container,
+    .cups_photo,
+    .tea_photo,
+    .learn_photo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 720px;
+    }
+
+    .page1_text,
+    .page2_text,
+    .page3_text,
+    h1 {
+        font-size: 45px;
+    }
+
+    .quote {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu_item {
+        float: left;
+    }
+
+    .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+
+    }
+
+    .mobilemenu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .photocredit,
+    .credit,
+    .credits {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .menu-btn:checked ~ {
+        display: inline-block;
+        float: right;
+        max-height: 300px;
+    }
+
+    .navbar {
+        margin-top: 0px;
+    }
+
+    .mobilemenu {
+        margin-top: 0;
+    }
+
+}
